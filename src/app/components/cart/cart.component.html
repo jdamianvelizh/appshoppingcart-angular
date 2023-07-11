@@ -1,9 +1,9 @@
 <div class="productCart-wrapper">
-    <article class="productCart">
+    <article class="productCart" *ngFor="let product of myCart$ | async">
         <div class="product-body">
-            <p>product.title</p>
+            <p>{{product.title}}</p>
             <div class="product-body-info">
-                <p>$ product.price</p>
+                <p>$ {{product.price}}</p>
                 <p>product.cantidad</p>
             </div>
         </div>
